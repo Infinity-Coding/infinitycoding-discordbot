@@ -22,3 +22,11 @@
 4. Open `./commands/commandMute.js` and fill in your IDs 
 5. Open `./commands/commandUnmute.js`and fill in your IDs
 6. Execute `code-start`
+
+# Socials & Help
+
+- Instagram: https://www.instagram.com/infinity2kdev/
+- Twitch: https://www.twitch.tv/infinity2kdev
+- YouTube: https://www.youtube.com/channel/UC6E0Whf5ANPN7MG-vnx7V6A
+
+If you need help, feel free to join on our [Discord](https://discord.gg/8xtBezfQrT)

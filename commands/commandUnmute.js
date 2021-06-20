@@ -1,5 +1,9 @@
 const { MessageEmbed } = require("discord.js");
 
+require("dotenv").config();
+
+const { BOT_MUTED_ROLE } = process.env;
+
 module.exports.info = {
     name: "unmute"
 }
@@ -22,7 +26,7 @@ module.exports.run = async (client, message, args) => {
             message.channel.send(embedP)
         } else {
             const embedRes = new MessageEmbed();
-            let mutedRole = message.guild.roles.cache.get('855873860099899422')
+            let mutedRole = message.guild.roles.cache.get(BOT_MUTED_ROLE)
 
             embedRes.setColor('#fcd619')
             embedRes.setTitle("Erfolgreich")
@@ -31,7 +35,6 @@ module.exports.run = async (client, message, args) => {
             )
             embedRes.setTimestamp()
             embedRes.setFooter('Infinity Coding')
-            embedRes.setImage('https://cdn.discordapp.com/attachments/787042688548864031/852251726056390666/web-wiki-header-background.png')
 
             message.channel.send(embedRes)
 

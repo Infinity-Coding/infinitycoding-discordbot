@@ -1,5 +1,9 @@
 const { Message, MessageEmbed } = require("discord.js");
 
+require("dotenv").config();
+
+const { BOT_LOG_CHANNEL, BOT_MUTED_ROLE } = process.env;
+
 module.exports.info = {
     name: "mute"
 }
@@ -36,8 +40,8 @@ module.exports.run = async (client, message, args) => {
         } else {
             const embedRes   = new MessageEmbed();
             const embedLog   = new MessageEmbed();
-            const channelLog = message.guild.channels.cache.get("855876558795571201");
-            let mutedRole = message.guild.roles.cache.get('855873860099899422')
+            const channelLog = message.guild.channels.cache.get(BOT_LOG_CHANNEL);
+            let mutedRole = message.guild.roles.cache.get(BOT_MUTED_ROLE)
 
             embedRes.setColor('#fcd619')
             embedRes.setTitle("Erfolgreich")
