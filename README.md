@@ -17,11 +17,9 @@
 # Installation
 
 1. Install [Node.js](https://nodejs.org)
-2. Execute `code-install.bat`
+2. Run `code-install.bat` to install all npm packages
 3. Open `.env` and fill in your credentials
-4. Open `./commands/commandMute.js` and fill in your IDs 
-5. Open `./commands/commandUnmute.js`and fill in your IDs
-6. Execute `code-start`
+4. Run `code-start` to start the bot
 
 # Socials & Help
 
