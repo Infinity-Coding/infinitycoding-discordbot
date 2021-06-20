@@ -1,7 +1,7 @@
 {
   "name": "infinitycoding-discordbot",
   "version": "1.2.9",
-  "description": "This is the official Infinity Coding Discord Bot! You dont have the permission to use it!",
+  "description": "This is the official Infinity Coding Discord Bot!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
